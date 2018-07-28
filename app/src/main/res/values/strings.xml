@@ -1,0 +1,125 @@
+<resources>
+    <string name="app_name">RideApp</string>
+    <string name="log_in">Log In</string>
+    <string name="username">Username</string>
+    <string name="pass">*********</string>
+    <string name="let_s_go">Let\'s Go</string>
+    <string name="forget_reset_password">Forget/Reset Password?</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="take_a_lift">Take A Lift</string>
+    <string name="give_a_lift">Give A Lift</string>
+    <string name="rate_us_feedback">Rate Us/ Feedback</string>
+    <string name="back_to_home">Back To HOme</string>
+    <string name="thank_you">THANK YOU..</string>
+    <string name="massege">RIDEAPP Hopethat you will enjoy your ride.</string>
+    <string name="your_rider_detail">Your Rider Detail</string>
+    <string name="name">Name :</string>
+    <string name="username2">Username :</string>
+    <string name="vehicle_no">Vehicle No. :</string>
+    <string name="contact_no">Contact No. :</string>
+    <string name="distance">Distance :</string>
+    <string name="see_on_map">See On Map</string>
+    <string name="done">DONE</string>
+    <string name="all_taken_rides">All Taken Rides : </string>
+    <string name="you_want_to_take_a_lift">You Want To Take A Lift</string>
+    <string name="use_current_location">Use Current Location</string>
+    <string name="from">From :</string>
+    <string name="enter_source_location">Enter Source Location</string>
+    <string name="to">To :</string>
+    <string name="enter_destination_location">Enter Destination Location</string>
+    <string name="landmark">Landmark :</string>
+    <string name="enter_nearest_point">Enter Nearest Point</string>
+    <string name="vehicle">Vehicle :</string>
+    <string name="person_s">Person\'s :</string>
+    <string name="beg_s">Beg\'s :</string>
+    <string name="book_ride">Book Ride</string>
+    <string name="ride_information">Ride Information</string>
+    <string name="to1">TO</string>
+    <string name="msg4">Offer Earned by Rider</string>
+    <string name="rider_detail">Rider Detail</string>
+    <string name="taker_detail">Taker Detail</string>
+    <string name="registration_process">Registration Process</string>
+    <string name="personal_information">Personal Information -</string>
+    <string name="full_name">Full Name</string>
+    <string name="email_adress">Email Address</string>
+    <string name="aadhar_card_number">Aadhar Card Number</string>
+    <string name="go_to_step_2">GO TO STEP 2</string>
+    <string name="vehicle_information">Vehicle Information -</string>
+    <string name="vehicle_type">Vehicle Type :</string>
+    <string name="go_to_step_3">GO TO Step 3</string>
+    <string name="set_password">SET PASSWORD -</string>
+    <string name="password">password</string>
+    <string name="re_enter_password">Re-enter Password</string>
+    <string name="vehicle_no2">Vehicle No. :</string>
+    <string name="vehicle_pic">Vehicle Pic :</string>
+    <string name="your_passenger_detail">Your Passenger Detail :</string>
+    <string name="source">Source :</string>
+    <string name="destination">Destination :</string>
+    <string name="landmark2">Landmark :</string>
+    <string name="distance2">Distance :</string>
+    <string name="person">Person :</string>
+    <string name="begs">Begs :</string>
+    <string name="rate_this_app">RATE THIS APP</string>
+    <string name="feedback_suggestion">Feedback / Suggestion :</string>
+    <string name="write_your_comment">write your comment…</string>
+    <string name="submit">submit</string>
+    <string name="personal_detail">Personal Detail :</string>
+    <string name="contact_detail">Contact Detail :</string>
+    <string name="vehicle_detail">Vehicle Detail :</string>
+    <string name="car">CAR</string>
+    <string name="rides_deatil">Rides Deatil :</string>
+    <string name="no_of_rides_taken">No. of Rides Taken :</string>
+    <string name="no_of_rides_given">No. of Rides Given :</string>
+    <string name="earned_offer">Earned Offer</string>
+    <string name="logout">LOGOUT</string>
+    <string name="delete_account">DELETE ACCOUNT</string>
+    <string name="msg5">Share Rides and earned most exiting offer and Many gift voucher For each Successful Ride!</string>
+    <string name="offers_and_gift_voucher">Offers and Gift Voucher :</string>
+    <string name="offer_you_have_already_earned">Offer You Have Already earned :</string>
+    <string name="people_who_are_intrested">People who are Intrested :</string>
+    <string name="how_to_use_rideapp">How To Use RideApp?</string>
+    <string name="all_given_rides">All Given Rides :</string>
+    <string name="you_are_available">You Are Available :</string>
+    <string name="search">SEARCH</string>
+    <string name="varification_process">Varification Process :</string>
+    <string name="enter_your_email">Enter Your Email</string>
+    <string name="send_verification_code">Send Verification Code</string>
+    <string name="one_time_password">One Time Password</string>
+    <string name="new_password_6_10_digit">New Password (6 – 10 digit)</string>
+    <string name="change_password">change password</string>
+    <string name="what_is_rideapp">What Is RideApp?</string>
+    <string name="home">Home</string>
+    <string name="take_ride">Take Ride</string>
+    <string name="give_ride">Give Ride</string>
+    <string name="invite_and_earn">Invite and Earn</string>
+    <string name="rating_feedback">Rating / Feedback</string>
+    <string name="about">About</string>
+    <string name="help">Help</string>
+    <string name="emergency_contact">Emergency Contact</string>
+    <string name="quit">Quit</string>
+    <string name="email_address">Email Address</string>
+    <string name="all_offer">All Offer</string>
+    <string name="use_map">Use Map</string>
+    <string name="decline">Decline</string>
+    <string name="offer_earned_by_taker">Offer Earned By Taker</string>
+    <string name="get_your_offer">Get Your Offer</string>
+    <string name="all_rides">All Rides</string>
+    <string name="all_given_taken_rides">All Given/Taken Rides:-</string>
+    <string-array name="vt">
+        <item>-- Any Vehicle --</item>
+        <item>CAR</item>
+        <item>BIKE</item>
+        <item>SCOOTY</item>
+    </string-array>
+    <string-array name="nb">
+        <item>-- NO--</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="np">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+</resources>

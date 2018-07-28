@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="10dp"
+    tools:context="com.example.shubhampratap.rideapp.OAEActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="#40866c"
+        android:elevation="21dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/bfoeo"
+            style="@android:style/Widget.Holo.Light.ImageButton"
+            android:layout_width="64dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="#40866c"
+            android:scaleType="fitXY"
+            android:tint="@android:color/white"
+            app:srcCompat="@android:drawable/ic_input_delete" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:fontFamily="serif"
+            android:gravity="center_vertical"
+            android:text="@string/offer_you_have_already_earned"
+            android:textAlignment="textStart"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold|italic" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorButtonNormal"
+            android:elevation="16dp"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/colorPrimaryDark" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="@android:color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>

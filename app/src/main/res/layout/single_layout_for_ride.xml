@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/button_layout"
+    android:backgroundTint="#e6e4e4"
+    android:elevation="13dp"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="From : "
+            android:textAlignment="textEnd"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/src"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Sultanpur"
+            android:textAlignment="viewStart"
+            android:layout_marginLeft="3dp"
+            android:textAppearance="@android:style/TextAppearance.Medium" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/colorPrimaryDark" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="To :"
+            android:textAlignment="textEnd"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/dst"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Ghazibad"
+            android:textAlignment="viewStart"
+            android:layout_marginLeft="3dp"
+            android:textAppearance="@android:style/TextAppearance.Medium" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/colorPrimaryDark" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="Given By :"
+            android:textAlignment="textEnd"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/rider"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:textAlignment="viewStart"
+            android:layout_marginLeft="3dp"
+            android:textAppearance="@android:style/TextAppearance.Medium" />
+
+        <TextView
+            android:id="@+id/dateride"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="29/05/2017"
+            android:textAppearance="@android:style/TextAppearance.Small" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/colorPrimaryDark" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="Taken By :"
+            android:textAlignment="textEnd"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/taker"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:textAlignment="viewStart"
+            android:textAppearance="@android:style/TextAppearance.Medium" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/colorPrimaryDark" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:text="Status :"
+            android:textAlignment="textEnd"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/statusride"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:textAlignment="viewStart"
+            android:layout_marginLeft="3dp"
+            android:textAppearance="@android:style/TextAppearance.Medium" />
+
+        <Button
+            android:id="@+id/cancelride"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@drawable/button_layout"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:text="Cancel"
+            android:textColor="@android:color/white"
+            tools:ignore="ButtonOrder" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/colorPrimaryDark" />
+
+    <Button
+        android:id="@+id/ridefulldetail"
+        style="@android:style/Widget.Button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/take_button"
+        android:backgroundTint="#40866c"
+        android:elevation="25dp"
+        android:fontFamily="serif-monospace"
+        android:padding="10dp"
+        android:text="View Full Detail"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+</LinearLayout>

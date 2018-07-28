@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "747326275667",
+    "firebase_url": "https://rideapp-a6e3a.firebaseio.com",
+    "project_id": "rideapp-a6e3a",
+    "storage_bucket": "rideapp-a6e3a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:747326275667:android:bc30d126553194e7",
+        "android_client_info": {
+          "package_name": "com.example.shubhampratap.rideapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "747326275667-78qbffbegp87gha3isk3phvqj7c0oap3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.shubhampratap.rideapp",
+            "certificate_hash": "aa76ba37d0d2b2bc470794bbc87d6d25096af1d5"
+          }
+        },
+        {
+          "client_id": "747326275667-h92ai4eo1jn3s85122jqck98kb1lu5c6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCCoKDRzoEf_TMsr6E6P7vkW2sOYT3-Z4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "747326275667-h92ai4eo1jn3s85122jqck98kb1lu5c6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

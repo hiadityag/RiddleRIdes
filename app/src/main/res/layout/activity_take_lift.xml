@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="24dp"
+    tools:context="com.example.shubhampratap.rideapp.TakeLiftActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="#40866c"
+        android:elevation="21dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/backtoindex"
+            style="@android:style/Widget.Holo.Light.ImageButton"
+            android:layout_width="64dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="#40866c"
+            android:scaleType="fitXY"
+            android:tint="@android:color/white"
+            app:srcCompat="@android:drawable/ic_input_delete" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="TAKE A LIFT"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@android:color/white"
+            android:textStyle="bold|italic" />
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/profile_image"
+        android:background="@drawable/button_layout"
+        android:backgroundTint="#ced6d5"
+        tools:ignore="UnusedAttribute">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:padding="10dp"
+                android:text="@string/you_want_to_take_a_lift"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:textColor="@android:color/background_dark"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <Button
+                android:id="@+id/sourceCurrenttake"
+                style="@android:style/Widget.DeviceDefault.Button.Borderless.Small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:elevation="0dp"
+                android:text="Use Map"
+                android:textAlignment="textEnd"
+                android:textColor="@android:color/holo_blue_light"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:ignore="RtlCompat,RtlHardcoded" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.3"
+                    android:fontFamily="serif"
+                    android:gravity="center_vertical"
+                    android:text="@string/from"
+                    android:textAlignment="textEnd"
+                    android:textAppearance="@android:style/TextAppearance.Material.Medium"
+                    android:textColor="@android:color/black"
+                    android:textSize="13sp"
+                    android:textStyle="bold|italic"
+                    tools:ignore="RtlCompat,RtlHardcoded" />
+
+                <EditText
+                    android:id="@+id/sourceEdittake"
+                    style="@style/Widget.AppCompat.EditText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_background"
+                    android:ems="10"
+                    android:hint="@string/enter_source_location"
+                    android:inputType="textPersonName"
+                    android:padding="15dp"
+                    android:selectAllOnFocus="true"
+                    android:textAlignment="center"
+                    android:textStyle="italic" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <Button
+                android:id="@+id/destCurrenttake"
+                style="@android:style/Widget.DeviceDefault.Button.Borderless.Small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:elevation="2dp"
+                android:text="Use Map"
+                android:textAlignment="viewEnd"
+                android:textColor="@android:color/holo_blue_light"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:ignore="RtlCompat,RtlHardcoded" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.3"
+                    android:fontFamily="serif"
+                    android:gravity="center_vertical"
+                    android:text="@string/to"
+                    android:textAlignment="textEnd"
+                    android:textAppearance="@android:style/TextAppearance.Material.Medium"
+                    android:textColor="@android:color/black"
+                    android:textSize="13sp"
+                    android:textStyle="bold|italic"
+                    tools:ignore="RtlCompat,RtlHardcoded" />
+
+                <EditText
+                    android:id="@+id/destEdittake"
+                    style="@style/Widget.AppCompat.EditText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_background"
+                    android:ems="10"
+                    android:hint="@string/enter_destination_location"
+                    android:inputType="textPersonName"
+                    android:padding="15dp"
+                    android:selectAllOnFocus="true"
+                    android:textAlignment="center"
+                    android:textStyle="italic" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimaryDark" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.3"
+                    android:fontFamily="serif"
+                    android:gravity="center_vertical"
+                    android:text="@string/landmark"
+                    android:textAlignment="textEnd"
+                    android:textAppearance="@android:style/TextAppearance.Material.Medium"
+                    android:textColor="@android:color/black"
+                    android:textSize="13sp"
+                    android:textStyle="bold|italic"
+                    tools:ignore="RtlCompat,RtlHardcoded" />
+
+                <EditText
+                    android:id="@+id/landEdit"
+                    style="@style/Widget.AppCompat.EditText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_background"
+                    android:ems="10"
+                    android:hint="@string/enter_nearest_point"
+                    android:inputType="textPersonName"
+                    android:padding="15dp"
+                    android:selectAllOnFocus="true"
+                    android:textAlignment="center"
+                    android:textStyle="italic" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.3"
+                    android:fontFamily="serif"
+                    android:gravity="center_vertical"
+                    android:text="@string/vehicle"
+                    android:textAlignment="textEnd"
+                    android:textAppearance="@android:style/TextAppearance.Material.Medium"
+                    android:textColor="@android:color/black"
+                    android:textSize="13sp"
+                    android:textStyle="bold|italic"
+                    tools:ignore="RtlHardcoded" />
+
+                <Spinner
+                    android:id="@+id/vehicleSpinner"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:dropDownWidth="match_parent"
+                    android:minWidth="100dp"
+                    android:padding="15dp"
+                    android:popupBackground="?android:attr/colorBackground"
+                    android:spinnerMode="dialog" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.3"
+                    android:fontFamily="serif"
+                    android:gravity="center_vertical"
+                    android:text="@string/person_s"
+                    android:textAlignment="textEnd"
+                    android:textAppearance="@android:style/TextAppearance.Material.Medium"
+                    android:textColor="@android:color/black"
+                    android:textSize="13sp"
+                    android:textStyle="bold|italic"
+                    tools:ignore="RtlHardcoded" />
+
+                <Spinner
+                    android:id="@+id/personSpinnertake"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="15dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.3"
+                    android:fontFamily="serif"
+                    android:gravity="center_vertical"
+                    android:text="@string/beg_s"
+                    android:textAlignment="textEnd"
+                    android:textAppearance="@android:style/TextAppearance.Material.Medium"
+                    android:textColor="@android:color/black"
+                    android:textSize="13sp"
+                    android:textStyle="bold|italic"
+                    tools:ignore="RtlHardcoded" />
+
+                <Spinner
+                    android:id="@+id/begSpinnertake"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="15dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <Button
+                android:id="@+id/bookButton"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/picback"
+                android:backgroundTint="@android:color/holo_blue_dark"
+                android:elevation="24dp"
+                android:fontFamily="serif"
+                android:padding="10dp"
+                android:text="@string/book_ride"
+                android:textAllCaps="true"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@android:color/white"
+                android:textStyle="bold|italic" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

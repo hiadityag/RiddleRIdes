@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shubhampratap.rideapp.TakerDetailActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="#40866c"
+        android:elevation="21dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/bftd"
+            style="@android:style/Widget.Holo.Light.ImageButton"
+            android:layout_width="64dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="#40866c"
+            android:scaleType="fitXY"
+            android:tint="@android:color/white"
+            app:srcCompat="@android:drawable/ic_input_delete" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="RIDER"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@android:color/white"
+            android:textStyle="bold|italic" />
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tol">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back"
+            android:backgroundTint="?android:attr/colorButtonNormal"
+            android:orientation="vertical"
+            android:padding="10dp"
+            tools:targetApi="lollipop">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:padding="10dp"
+                android:text="@string/your_rider_detail"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:textColor="@android:color/background_dark"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="250dp"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:fontFamily="serif"
+                    android:padding="5dp"
+                    android:text="@string/name"
+                    android:textAlignment="textEnd"
+                    android:textAppearance="@android:style/TextAppearance.Medium"
+                    android:textColor="@android:color/background_dark"
+                    android:textStyle="bold"
+                    tools:ignore="RtlCompat" />
+
+                <TextView
+                    android:id="@+id/namerider"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:fontFamily="serif-monospace"
+                    android:padding="5dp"
+                    android:text="Shubham Pratap "
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:fontFamily="serif"
+                    android:padding="5dp"
+                    android:text="@string/username2"
+                    android:textAlignment="textEnd"
+                    android:textAppearance="@android:style/TextAppearance.Medium"
+                    android:textColor="@android:color/background_dark"
+                    android:textStyle="bold"
+                    tools:ignore="RtlCompat" />
+
+                <TextView
+                    android:id="@+id/usernamerider"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:fontFamily="serif-monospace"
+                    android:padding="5dp"
+                    android:text="shubham_37"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:fontFamily="serif"
+                    android:padding="5dp"
+                    android:text="@string/vehicle_no"
+                    android:textAlignment="textEnd"
+                    android:textAppearance="@android:style/TextAppearance.Medium"
+                    android:textColor="@android:color/background_dark"
+                    android:textStyle="bold"
+                    tools:ignore="RtlCompat" />
+
+                <TextView
+                    android:id="@+id/vehiclenorider"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:fontFamily="serif-monospace"
+                    android:padding="5dp"
+                    android:text="UP14-3588"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:fontFamily="serif"
+                    android:padding="5dp"
+                    android:text="Vehicle Type :"
+                    android:textAlignment="textEnd"
+                    android:textAppearance="@android:style/TextAppearance.Medium"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    tools:ignore="RtlCompat" />
+
+                <TextView
+                    android:id="@+id/vehicleTyperrider"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:fontFamily="serif-monospace"
+                    android:padding="5dp"
+                    android:text="CAR"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="28sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:fontFamily="serif"
+                    android:padding="5dp"
+                    android:text="@string/contact_no"
+                    android:textAlignment="textEnd"
+                    android:textAppearance="@android:style/TextAppearance.Medium"
+                    android:textColor="@android:color/background_dark"
+                    android:textStyle="bold"
+                    tools:ignore="RtlCompat" />
+
+                <TextView
+                    android:id="@+id/contactnorider"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:fontFamily="serif-monospace"
+                    android:padding="5dp"
+                    android:text="9758797678"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+
+                <ImageButton
+                    android:id="@+id/calling"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:elevation="11dp"
+                    app:srcCompat="@android:drawable/stat_sys_phone_call" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:fontFamily="serif"
+                    android:padding="5dp"
+                    android:text="@string/distance"
+                    android:textAlignment="textEnd"
+                    android:textAppearance="@android:style/TextAppearance.Medium"
+                    android:textColor="@android:color/background_dark"
+                    android:textStyle="bold"
+                    tools:ignore="RtlCompat" />
+
+                <TextView
+                    android:id="@+id/distancerider"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:fontFamily="serif-monospace"
+                    android:padding="5dp"
+                    android:text="3.5 KM(from source)"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <Button
+                android:id="@+id/riderOnMap"
+                style="@android:style/Widget.DeviceDefault.Button.Borderless.Small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/see_on_map"
+                android:textAlignment="textEnd"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="16sp"
+                android:textStyle="bold|italic"
+                tools:ignore="RtlCompat" />
+
+            <View
+                android:layout_width="110dp"
+                android:layout_height="2dp"
+                android:layout_gravity="right"
+                android:background="@color/colorPrimary"
+                tools:ignore="RtlHardcoded" />
+
+            <Button
+                android:id="@+id/doneButtonrider"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="30dp"
+                android:background="@drawable/take_button"
+                android:backgroundTint="@android:color/holo_blue_dark"
+                android:elevation="19dp"
+                android:fontFamily="sans-serif"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="@string/done"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:textColor="@android:color/white"
+                android:textStyle="bold|italic" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

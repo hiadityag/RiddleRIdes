@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="10dp"
+    tools:context="com.example.shubhampratap.rideapp.TakeRidesActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="#40866c"
+            android:elevation="21dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/backtoindex"
+                style="@android:style/Widget.Holo.Light.ImageButton"
+                android:layout_width="64dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="#40866c"
+                android:scaleType="fitXY"
+                android:tint="@android:color/white"
+                app:srcCompat="@android:drawable/ic_input_delete" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="CREATE AN ACCOUNT"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@android:color/white"
+                android:textStyle="bold|italic" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="serif"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:text="@string/all_taken_rides"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/crt"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@drawable/take_button"
+                android:backgroundTint="@android:color/holo_blue_dark"
+                android:elevation="12dp"
+                android:padding="5dp"
+                android:text="25"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                tools:ignore="UnusedAttribute" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/colorPrimaryDark" />
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/white"
+            android:clipToPadding="false"
+            android:scrollbars="vertical" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/main"
+    tools:context="com.example.shubhampratap.rideapp.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:elevation="28dp"
+        android:background="#40866c"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/appnev"
+            android:layout_width="64dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:elevation="20dp"
+            app:civ_border_color="@color/colorPrimaryDark"
+            app:civ_border_overlay="true"
+            app:civ_border_width="2dp"
+            app:srcCompat="@drawable/logo" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="64dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:elevation="20dp"
+            app:civ_border_color="@color/colorPrimaryDark"
+            app:civ_border_overlay="true"
+            app:civ_border_width="2dp"
+            app:srcCompat="@drawable/dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back"
+        android:backgroundTint="@color/colorAccent"
+        android:orientation="vertical"
+        android:paddingTop="130dp">
+
+        <Button
+            android:id="@+id/giveButton"
+            style="@android:style/Widget.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/take_button"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:elevation="24dp"
+            android:fontFamily="serif"
+            android:paddingBottom="20dp"
+            android:paddingLeft="35dp"
+            android:paddingRight="35dp"
+            android:paddingTop="20dp"
+            android:text="@string/give_a_lift"
+            android:textAlignment="center"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/takeButton"
+            style="@android:style/Widget.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:background="@drawable/take_button"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:elevation="24dp"
+            android:fontFamily="serif"
+            android:paddingBottom="20dp"
+            android:paddingLeft="35dp"
+            android:paddingRight="35dp"
+            android:paddingTop="20dp"
+            android:text="@string/take_a_lift"
+            android:textAlignment="center"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+

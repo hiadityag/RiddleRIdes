@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context="com.example.shubhampratap.rideapp.NevigationActivity"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/cancel"
+                style="@android:style/Widget.ImageButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:adjustViewBounds="true"
+                android:autofillHints="@android:color/transparent"
+                android:background="@drawable/button_layout"
+                android:backgroundTint="@color/colorAccent"
+                android:cropToPadding="true"
+                android:elevation="17dp"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:tint="@android:color/holo_red_light"
+                app:srcCompat="@android:drawable/ic_delete" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/button_layout"
+                android:backgroundTint="#e7eae9"
+                android:elevation="15dp"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:scaleType="fitXY"
+                    android:tint="#2b5e4b"
+                    app:srcCompat="@android:drawable/ic_menu_myplaces" />
+
+                <Button
+                    android:id="@+id/homeButton"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="serif-monospace"
+                    android:gravity="center"
+                    android:lineSpacingExtra="10sp"
+                    android:text="@string/home"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_layout"
+                android:backgroundTint="#e7eae9"
+                android:elevation="15dp"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    app:srcCompat="@android:drawable/ic_media_rew"
+                    android:tint="#647"/>
+
+                <Button
+                    android:id="@+id/allRide"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="serif-monospace"
+                    android:gravity="center"
+                    android:lineSpacingExtra="10sp"
+                    android:text="@string/all_rides"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/take_button"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:elevation="10dp"
+                    android:padding="10dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_layout"
+                android:backgroundTint="#e7eae9"
+                android:elevation="15dp"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    app:srcCompat="@android:drawable/ic_menu_today"
+                    android:tint="#6c5c0a"/>
+
+                <Button
+                    android:id="@+id/offerearned"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="serif-monospace"
+                    android:gravity="center"
+                    android:lineSpacingExtra="10sp"
+                    android:text="@string/all_offer"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_layout"
+                android:backgroundTint="#e7eae9"
+                android:elevation="15dp"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    app:srcCompat="@android:drawable/ic_menu_share"
+                    android:tint="@color/colorPrimary"/>
+
+                <Button
+                    android:id="@+id/refer"
+
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="serif-monospace"
+                    android:gravity="center"
+                    android:lineSpacingExtra="10sp"
+                    android:text="@string/invite_and_earn"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_layout"
+                android:backgroundTint="#e7eae9"
+                android:elevation="15dp"
+
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:elevation="1dp"
+                    app:srcCompat="@android:drawable/btn_star_big_on" />
+
+                <Button
+                    android:id="@+id/rateus"
+
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="serif-monospace"
+                    android:gravity="center"
+                    android:lineSpacingExtra="10sp"
+                    android:text="@string/rating_feedback"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_layout"
+                android:backgroundTint="#e7eae9"
+                android:elevation="15dp"
+
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    app:srcCompat="@android:drawable/ic_menu_preferences"
+                    android:tint="#0a69c9"
+                    />
+
+                <Button
+                    android:id="@+id/about"
+
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="serif-monospace"
+                    android:gravity="center"
+                    android:lineSpacingExtra="10sp"
+                    android:text="@string/about"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_layout"
+                android:backgroundTint="#e7eae9"
+                android:elevation="15dp"
+
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    app:srcCompat="@android:drawable/ic_menu_help"
+                    android:tint="#18565c"
+                    />
+
+                <Button
+                    android:id="@+id/help"
+
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="serif-monospace"
+                    android:gravity="center"
+                    android:lineSpacingExtra="10sp"
+                    android:text="@string/help"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_layout"
+                android:backgroundTint="#e7eae9"
+                android:elevation="15dp"
+
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    app:srcCompat="@android:drawable/sym_action_call"
+                    android:tint="#12812a"/>
+
+                <Button
+                    android:id="@+id/contact"
+
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="serif-monospace"
+                    android:gravity="center"
+                    android:lineSpacingExtra="10sp"
+                    android:text="@string/emergency_contact"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:background="@drawable/button_layout"
+                android:backgroundTint="#e7eae9"
+                android:elevation="15dp"
+
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    app:srcCompat="@android:drawable/ic_lock_power_off"
+                    android:tint="#d71121"
+                    />
+
+                <Button
+                    android:id="@+id/exit"
+
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="serif-monospace"
+                    android:gravity="center"
+                    android:lineSpacingExtra="10sp"
+                    android:text="@string/quit"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

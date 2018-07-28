@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="10dp"
+    tools:context="com.example.shubhampratap.rideapp.RiderDetailActivity"
+    tools:targetApi="lollipop"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="#40866c"
+        android:elevation="21dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/bfrd"
+            style="@android:style/Widget.Holo.Light.ImageButton"
+            android:layout_width="64dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="#40866c"
+            android:scaleType="fitXY"
+            android:tint="@android:color/white"
+            app:srcCompat="@android:drawable/ic_input_delete" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="TAKER"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@android:color/white"
+            android:textStyle="bold|italic" />
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back"
+        android:backgroundTint="?android:attr/colorButtonNormal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:layout_marginTop="20dp"
+                android:adjustViewBounds="false"
+                android:src="@drawable/logo"
+                app:civ_border_color="#8b000000"
+                app:civ_border_overlay="false"
+                app:civ_border_width="2dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/nametaker"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:padding="5dp"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        tools:ignore="RtlSymmetry" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@color/colorPrimaryDark" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginTop="3dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/usernametaker"
+                            android:layout_width="wrap_content"
+                            android:layout_height="34dp"
+                            android:layout_weight="1"
+                            android:fontFamily="monospace"
+                            android:gravity="start"
+                            android:padding="5dp"
+                            android:textAlignment="viewEnd"
+                            android:textColor="?attr/colorControlNormal"
+                            android:textSize="16sp"
+                            android:textStyle="italic"
+                            tools:ignore="RtlSymmetry" />
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="top|fill_vertical"
+                            android:layout_margin="5dp"
+                            android:background="@color/colorPrimaryDark" />
+
+                        <Button
+                            android:id="@+id/contacttaker"
+                            style="@android:style/Widget.DeviceDefault.Button.Borderless.Small"
+                            android:layout_width="wrap_content"
+                            android:layout_height="34dp"
+                            android:layout_weight="1"
+                            android:fontFamily="monospace"
+                            android:padding="5dp"
+                            android:textColor="?attr/colorControlNormal"
+                            android:textSize="16sp"
+                            android:textStyle="italic" />
+
+                    </LinearLayout>
+
+                    <View
+
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center"
+                        android:background="@color/colorPrimaryDark" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="110dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0"
+                            android:text="@string/source"
+                            android:textAlignment="textEnd"
+                            android:textSize="17sp"
+                            android:textStyle="bold|italic" />
+
+                        <TextView
+                            android:id="@+id/sourcetaker"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:textAlignment="center" />
+                    </LinearLayout>
+
+                    <View
+
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center"
+                        android:background="@color/colorPrimaryDark" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="110dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0"
+                            android:text="@string/destination"
+                            android:textAlignment="viewEnd"
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/destinationtaker"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:textAlignment="center" />
+                    </LinearLayout>
+
+                    <View
+
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center"
+                        android:background="@color/colorPrimaryDark" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="110dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0"
+                            android:text="@string/landmark2"
+                            android:textAlignment="viewEnd"
+                            android:textSize="17sp"
+                            android:textStyle="bold|italic" />
+
+                        <TextView
+                            android:id="@+id/landtaker"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:textAlignment="center" />
+                    </LinearLayout>
+
+                    <View
+
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center"
+                        android:background="@color/colorPrimaryDark" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="110dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0"
+                            android:text="@string/distance2"
+                            android:textAlignment="viewEnd"
+                            android:textSize="17sp"
+                            android:textStyle="bold|italic" />
+
+                        <TextView
+                            android:id="@+id/distancetaker"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.91"
+                            android:textAlignment="center" />
+                    </LinearLayout>
+
+                    <View
+
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center"
+                        android:background="@color/colorPrimaryDark" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="110dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0"
+                            android:text="@string/person"
+                            android:textAlignment="viewEnd"
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/persontaker"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.91"
+                            android:textAlignment="center" />
+                    </LinearLayout>
+
+                    <View
+
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center"
+                        android:background="@color/colorPrimaryDark" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="110dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0"
+                            android:text="@string/begs"
+                            android:textAlignment="viewEnd"
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/begtaker"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.91"
+                            android:textAlignment="center" />
+                    </LinearLayout>
+
+                    <View
+
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center"
+                        android:background="@color/colorPrimaryDark" />
+
+                    <Button
+                        android:id="@+id/seeonmaptaker"
+                        style="@android:style/Widget.DeviceDefault.Button.Borderless.Small"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/see_on_map"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="24sp"
+                        android:textStyle="bold|italic" />
+
+                    <View
+
+                        android:layout_width="175dp"
+                        android:layout_height="4dp"
+                        android:layout_gravity="center"
+                        android:background="@color/colorPrimaryDark" />
+
+                    <Button
+                        android:id="@+id/doneButtontaker"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:background="@drawable/take_button"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:elevation="19dp"
+                        android:fontFamily="serif"
+                        android:padding="15dp"
+                        android:text="@string/done"
+                        android:textAllCaps="true"
+                        android:textAppearance="@android:style/TextAppearance.Material.Large"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/cancelButtontaker"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/take_button"
+                        android:backgroundTint="@android:color/holo_red_light"
+                        android:elevation="19dp"
+                        android:fontFamily="serif"
+                        android:padding="15dp"
+                        android:text="@string/decline"
+                        android:textAllCaps="true"
+                        android:textAppearance="@android:style/TextAppearance.Material.Large"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

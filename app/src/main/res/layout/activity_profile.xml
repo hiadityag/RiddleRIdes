@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shubhampratap.rideapp.ProfileActivity"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#40866c"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/backButton"
+            style="@android:style/Widget.Holo.Light.ImageButton"
+            android:layout_width="64dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="#40866c"
+            android:scaleType="fitXY"
+            android:tint="@android:color/white"
+            app:srcCompat="@android:drawable/ic_input_delete" />
+
+        <TextView
+            android:id="@+id/personName"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="serif"
+            android:gravity="center_vertical"
+            android:text="Shubham pratap Singh"
+            android:textAlignment="center"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+
+        <ImageButton
+            android:id="@+id/editProfile"
+            style="@android:style/Widget.Holo.Light.ImageButton"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:backgroundTint="#40866c"
+            android:tint="@android:color/white"
+            app:srcCompat="@android:drawable/ic_menu_edit" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:elevation="24dp"
+        android:visibility="visible"
+        tools:targetApi="lollipop">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#dde4e3"
+            android:clipToPadding="false"
+            android:elevation="24dp"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/profileImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="325dp"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="true"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/dp" />
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/changeProfile"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_gravity="bottom|right"
+                    android:layout_margin="15dp"
+                    android:padding="5dp"
+                    app:backgroundTint="#40866c"
+                    app:elevation="12dp"
+                    app:fabSize="mini"
+                    app:rippleColor="@color/colorAccent"
+                    app:srcCompat="@android:drawable/ic_menu_camera" />
+            </FrameLayout>
+
+
+            <LinearLayout
+                android:id="@+id/personalDetail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:text="@string/personal_detail"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_gravity="start"
+                    android:background="@color/colorPrimaryDark" />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:padding="5dp"
+                    android:textAppearance="@android:style/TextAppearance.Material.Medium"
+                    android:textColor="?attr/colorControlNormal"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="start"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:id="@+id/username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:padding="5dp"
+                    android:textAppearance="@android:style/TextAppearance.Material.Medium"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="start"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:id="@+id/aadharNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:padding="5dp"
+                    android:textAppearance="@android:style/TextAppearance.Material.Medium"
+                    android:textColor="?attr/colorControlNormal"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="start"
+                    android:background="@android:color/darker_gray" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/contactDetail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:text="@string/contact_detail"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:typeface="monospace" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_gravity="start"
+                    android:background="@color/colorPrimaryDark" />
+
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:padding="5dp"
+                    android:textAppearance="@android:style/TextAppearance.Material.Medium"
+                    android:textColor="?attr/colorControlNormal"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="start"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:id="@+id/contactNO"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:padding="5dp"
+                    android:textAppearance="@android:style/TextAppearance.Material.Medium"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="start"
+                    android:background="@android:color/darker_gray" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/vehicleDetail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:text="@string/vehicle_detail"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_gravity="start"
+                    android:background="@color/colorPrimaryDark" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/vehicleNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="serif"
+                            android:padding="5dp"
+                            android:textAppearance="@android:style/TextAppearance.Material.Medium"
+                            android:textSize="20sp"
+                            android:textStyle="italic" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_gravity="start"
+                            android:background="@android:color/darker_gray" />
+
+                        <TextView
+                            android:id="@+id/vehicleCategeory"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="serif"
+                            android:padding="5dp"
+                            android:textAppearance="@android:style/TextAppearance.Material.Medium"
+                            android:textColor="?attr/colorControlNormal"
+                            android:textSize="20sp"
+                            android:textStyle="italic" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_gravity="start"
+                            android:background="@android:color/darker_gray" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/vehiclepic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="78dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@mipmap/ic_launcher" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rideDetail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:text="@string/rides_deatil"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_gravity="start"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/colorPrimaryDark" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="serif"
+                        android:padding="10dp"
+                        android:text="No Of All Rides : "
+                        android:textAppearance="@android:style/TextAppearance.Large"
+                        android:textStyle="italic" />
+
+                    <Button
+                        android:id="@+id/allRIDE"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:background="@drawable/take_button"
+                        android:backgroundTint="@android:color/holo_blue_dark"
+                        android:elevation="10dp"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="start"
+                    android:background="@android:color/darker_gray" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/accountSetting"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_gravity="start"
+                    android:background="@color/colorPrimaryDark" />
+
+                <Button
+                    android:id="@+id/offer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/take_button"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:elevation="12dp"
+                    android:fontFamily="serif"
+                    android:padding="10dp"
+                    android:text="@string/earned_offer"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/logoutButton"
+                    style="@android:style/Widget.Material.Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/back"
+                    android:backgroundTint="@android:color/darker_gray"
+                    android:elevation="12dp"
+                    android:padding="10dp"
+                    android:text="@string/logout"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/deleteButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:layout_margin="10dp"
+                    android:background="@android:color/holo_red_light"
+                    android:elevation="13dp"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/delete_account"
+                    android:textAllCaps="false"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+

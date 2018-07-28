@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="10dp"
+    tools:context="com.example.shubhampratap.rideapp.ListOfRiderActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            android:fontFamily="serif"
+            android:padding="10dp"
+            android:text="@string/people_who_are_intrested"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimaryDark" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/ridersRecyclerView"
+            android:layout_width="382dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:background="@android:color/white" />
+
+    </LinearLayout>
+
+</RelativeLayout>

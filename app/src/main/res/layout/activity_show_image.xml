@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shubhampratap.rideapp.ShowImageActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="#9cd4bf"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/bB"
+            style="@android:style/Widget.Holo.Light.ImageButton"
+            android:layout_width="64dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="#9cd4bf"
+            android:scaleType="fitXY"
+            android:tint="@color/colorPrimaryDark"
+            app:srcCompat="@android:drawable/ic_input_delete" />
+
+        <TextView
+            android:id="@+id/imgName"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:fontFamily="serif"
+            android:gravity="center_vertical"
+            android:text="Shubham pratap Singh"
+            android:textAlignment="viewStart"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/anyImage"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:cropToPadding="true"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/dp" />
+
+</LinearLayout>
